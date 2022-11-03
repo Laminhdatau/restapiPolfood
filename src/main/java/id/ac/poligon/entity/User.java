@@ -2,12 +2,14 @@ package id.ac.poligon.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "t_users")
 public class User {
 
     @Id
-    private String id;
+    private String id_user;
 
     private String username;
 
@@ -18,11 +20,11 @@ public class User {
     private String role_id;
 
     
-    public String getId() {
-        return id;
+    public String getId_user() {
+        return id_user;
     }
-    public void setId(String id) {
-        this.id = id;
+    public void setId_user(String id_user) {
+        this.id_user = id_user;
     }
     public String getUsername() {
         return username;
