@@ -14,15 +14,15 @@ public class UserController {
 	@Autowired
 	private UserDao ud;
 
-	@GetMapping("/user")
+	@GetMapping("/t_users")
 
 	public Iterable<User> ambilSemua() {
 		return ud.findAll();
 	}
 
-	@PostMapping("/user")
-	public void simpan(@RequestBody User user) {
-		ud.save(user);
+	@PostMapping("/t_users")
+	public void simpan(@RequestBody User t_users) {
+		ud.save(t_users);
 	}
 
 }
