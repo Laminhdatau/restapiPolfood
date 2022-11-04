@@ -19,7 +19,7 @@ public class UserController {
 		return ud.findAll();
 	}
 	@PostMapping("/users")
-	public void simpan(@RequestBody User t_users) {
-		ud.save(t_users);
+	public void simpan(@RequestBody User t_user) {
+		ud.save(t_user);
 	}
 }

@@ -5,21 +5,18 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "t_users")
+@Table(name = "t_user")
 public class User {
 
     @Id
+    
     private String id_user;
 
     private String username;
 
     private String password;
 
-    private Boolean is_active;
-    
-    private String role_id;
-
-    
+ 
     public String getId_user() {
         return id_user;
     }
@@ -38,18 +35,5 @@ public class User {
     }
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public Boolean getIs_active() {
-        return is_active;
-    }
-    public void setIs_active(Boolean is_active) {
-        this.is_active = is_active;
-    }
-    public String getRole_id() {
-        return role_id;
-    }
-    public void setRole_id(String role_id) {
-        this.role_id = role_id;
     }
 }
